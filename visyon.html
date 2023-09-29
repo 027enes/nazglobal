@@ -16,19 +16,23 @@
   <div class="header-top">
     <div class="container">
       <div class="header-top-row">
-        <div class="header-top-lang-content">
-          <a href="" class="header-top-lang">
-            <img src="assets/img/turkey-flag.png" alt="turkey">
-            <span>Türkçe</span>
-          </a>
-          <a href="" class="header-top-lang">
-            <img src="assets/img/turkey-flag.png" alt="turkey">
-            <span>Türkçe</span>
-          </a>
-          <a href="" class="header-top-lang">
-            <img src="assets/img/turkey-flag.png" alt="turkey">
-            <span>Türkçe</span>
-          </a>
+        <div class="lang-btn win">
+          <div class="lang-cont">
+            <i class="fa-solid fa-earth-americas"></i>
+            Türkçe
+          </div>
+          <ul class="lang-content">
+            <li class="">
+              <a href="">
+                Türkçe
+              </a>
+            </li>
+            <li class="">
+              <a href="">
+                Türkçe
+              </a>
+            </li>
+          </ul>
         </div>
         <div class="header-top-socials-content">
           <div class="header-top-socials">
@@ -57,11 +61,11 @@
             <img src="assets/img/logo.png" alt="">
           </a>
         </div>
-        <nav>
+        <nav id="navigation">
           <ul class="header-ul">
-            <li class="header-navigation"><a href="">ANASAYFA</a></li>
-            <li class="header-navigation"><a>KURUMSAL</a>
-              <ul class="header-bottom-navigation">
+            <li class="header-navigation active"><a href="">ANASAYFA</a></li>
+            <li class="header-navigation mobil-bottom"><a>KURUMSAL<i class="fa-solid fa-chevron-up"></i></a>
+              <ul class="header-bottom-navigation mobil-bot">
                 <li class="header-bottom-nav"><a href="hakkimizda.html">HAKKIMIZDA</a></li>
                 <li class="header-bottom-nav"><a href="visyon.html">VİZYON VE MİSYON</a></li>
                 <li class="header-bottom-nav"><a href="">KİLOMETRE TAŞLARI</a></li>
@@ -70,8 +74,8 @@
               </ul>
             </li>
             <li class="header-navigation"><a href="markalarimiz.html">MARKALARIMIZ</a></li>
-            <li class="header-navigation"><a>SEKTÖRLER</a>
-              <ul class="header-bottom-navigation">
+            <li class="header-navigation mobil-bottom"><a>SEKTÖRLER<i class="fa-solid fa-chevron-up"></i></a>
+              <ul class="header-bottom-navigation mobil-bot">
                 <li class="header-bottom-nav"><a href="gida-ve-tuketici.html">GIDA VE TÜKETİCİ ÜRÜNLERİ</a></li>
                 <li class="header-bottom-nav"><a href="madeni-yaglar.html">MADENİ YAĞLAR</a></li>
                 <li class="header-bottom-nav"><a href="insaat.html">İNŞAAT</a></li>
@@ -79,21 +83,41 @@
                 <li class="header-bottom-nav"><a href="tarim-ve-hayvancilik.html">TARIM MAKİNALARI VE HAYVANCILIK</a></li>
               </ul>
             </li>
-            <li class="header-navigation"><a>BASIN ODASI</a>
-              <ul class="header-bottom-navigation">
+            <li class="header-navigation mobil-bottom"><a>BASIN ODASI<i class="fa-solid fa-chevron-up"></i></a>
+              <ul class="header-bottom-navigation mobil-bot">
                 <li class="header-bottom-nav"><a href="haberler.html">HABERLER</a></li>
                 <li class="header-bottom-nav"><a href="fuarlar.html">FUARLAR</a></li>
               </ul>
             </li>
-            <li class="header-navigation"><a>İNSAN KAYNAKLARI</a>
-              <ul class="header-bottom-navigation">
+            <li class="header-navigation mobil-bottom"><a>İNSAN KAYNAKLARI<i class="fa-solid fa-chevron-up"></i></a>
+              <ul class="header-bottom-navigation mobil-bot">
                 <li class="header-bottom-nav"><a href="ik-surec.html">İK SÜREÇLERİ</a></li>
                 <li class="header-bottom-nav"><a href="ik-politikamiz.html">İK POLİTİKAMIZ</a></li>
                 <li class="header-bottom-nav"><a href="egitim-politikamiz.html">EĞİTİM POLİTİKAMIZ</a></li>
               </ul>
             </li>
             <li class="header-navigation"><a href="iletisim.html">İLETİŞİM</a></li>
+            <div class="lang-btn mob">
+              <div class="lang-cont">
+                <i class="fa-solid fa-earth-americas"></i>
+                Türkçe
+              </div>
+              <ul class="lang-content">
+                <li class="">
+                  <a href="">
+                    Türkçe
+                  </a>
+                </li>
+                <li class="">
+                  <a href="">
+                    Türkçe
+                  </a>
+                </li>
+              </ul>
+            </div>
+
           </ul>
+          <div class="close" id="hamburgerClose"><i class="fa-solid fa-circle-xmark"></i></div>
         </nav>
         <div class="search-btn-content">
           <div class="search-btn" id="searchBtn">
@@ -110,6 +134,10 @@
               </div>
             </div>
           </div>
+          <div id="hamburger" class="header-hamburger">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+
         </div>
       </div>
     </div>
@@ -149,8 +177,17 @@
     <span>Copyright © 2023 design by Mistermedia</span>
   </div>
 </footer>
+<script type="text/javascript" src="assets/js/vanilla-tilt.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+<script type="module">import { Fancybox } from "https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.esm.js";</script>
+<link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <script src="assets/js/main.js"></script>
 <script>
+  VanillaTilt.init(document.querySelector(".p-visyon-img"), {
+    max: 15,
+    speed: 400
+  });
   function showMore() {
     const moreText = document.getElementById("moreText");
     const dots = document.getElementById("dots");
@@ -167,6 +204,19 @@
     }
   }
 
+  let hamburger = document.getElementById('hamburger')
+  let navigationA = document.getElementById('navigation')
+  let hamburgerClose = document.getElementById('hamburgerClose')
+
+  hamburger.addEventListener('click', () =>{
+    hamburger.classList.toggle('active')
+    navigationA.classList.toggle('active')
+  })
+  hamburgerClose.addEventListener('click', () =>{
+    hamburger.classList.remove('active')
+    navigationA.classList.remove('active')
+  })
+
 
   let searchBtn = document.getElementById('searchBtn')
   let searchClose = document.getElementById('searchClose')
@@ -180,6 +230,52 @@
     searchBtn.classList.remove('active')
     searchContent.classList.remove('active')
   })
+
+
+  function addToggleListeners() {
+    let mobilBottoms = document.querySelectorAll('.mobil-bottom');
+    let mobilBlocks = document.querySelectorAll('.mobil-bot');
+
+    mobilBottoms.forEach((mobilBottom, index) => {
+      mobilBottom.addEventListener('click', () => {
+        let mobilBlock = mobilBlocks[index];
+
+        // Diğer tüm .mobil-bot öğelerini gizleyin
+        mobilBlocks.forEach((block, idx) => {
+          if (idx !== index) {
+            block.style.display = 'none';
+          }
+        });
+
+        // Tıklanan elemanın görünürlüğünü değiştir
+        if (mobilBlock.style.display === 'block') {
+          mobilBlock.style.display = 'none';
+        } else {
+          mobilBlock.style.display = 'block';
+        }
+      });
+    });
+  }
+
+  function initMobilToggle() {
+    if (window.innerWidth <= 1000) {
+      addToggleListeners();
+    }
+  }
+
+  // Sayfa yüklenirken ve ekran genişliği değiştiğinde kontrol et
+  initMobilToggle();
+  window.addEventListener('resize', function() {
+    // Ekran genişliği değiştiğinde önceki dinleyicileri kaldır
+    let mobilBottoms = document.querySelectorAll('.mobil-bottom');
+    mobilBottoms.forEach((mobilBottom) => {
+      let clone = mobilBottom.cloneNode(true);
+      mobilBottom.parentNode.replaceChild(clone, mobilBottom);
+    });
+
+    // Sonrasında yeni olay dinleyicilerini ekle
+    initMobilToggle();
+  });
 </script>
 </body>
 </html>
